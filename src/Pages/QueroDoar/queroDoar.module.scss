@@ -1,0 +1,51 @@
+@use '../../global.scss' as *;
+
+.principal{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    color: $title-color;
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+}
+
+.boxFormulario{
+    border: 3px solid $title-color;
+    border-radius: 25px;
+    height: 60vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    div{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    input{
+        border-radius: 15px;
+        width: 65%;
+        height: 7%;
+        background: transparent;
+        border: 3px solid $title-color;
+        &::placeholder {
+            padding-left: 5%;
+            color: $title-color;
+          }
+    }
+    button{
+        border: none;
+        border-radius: 15px;
+        width: 40%;
+        height: 9%;
+        background-color: $title-color;
+        color: $primary-color;
+    }
+}

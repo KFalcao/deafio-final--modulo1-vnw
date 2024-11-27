@@ -1,0 +1,54 @@
+@use '../../global.scss' as *;
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $emphasis ;
+    color: $primary-color;
+    height: 12vh;
+}
+
+
+.boxLogo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 14vh;
+    width: 15vw;
+    color: $primary-color;
+}
+
+.boxMenu{
+    width: 35vw;
+     ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            color: $primary-color;
+            font-size: 20px;
+        }
+    }
+}
+.boxBusca{
+    width: 15vw;
+    height: 6vh;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: solid 2px $primary-color;
+    border-radius:15px;
+    input{
+        background: transparent;
+        border: none;         
+        outline: none;
+        color: $primary-color;
+        font-size: 1rem;
+        &::placeholder {
+            color: $primary-color;
+          }
+    }
+
+}

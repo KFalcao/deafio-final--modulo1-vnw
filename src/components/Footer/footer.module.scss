@@ -1,0 +1,26 @@
+@use '../../global.scss' as *;
+
+.contato{
+    background: $emphasis;
+    color: $primary-color;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    nav{
+        width: 12vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.infoSite{
+    background-color: #232020;
+    color: $primary-color;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

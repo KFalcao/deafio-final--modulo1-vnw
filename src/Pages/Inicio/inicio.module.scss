@@ -1,0 +1,31 @@
+@use '../../global.scss' as *;
+
+.banner{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    h2{
+        color: $primary-color;
+        font-size: 40px;
+        margin-left: 5vw;
+        width: 27vw;
+    }
+}
+
+.devoDoar{
+    height: 80vh;
+    div{
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            margin-left: 5vw;
+            color: $title-color;
+        }
+    }
+}
