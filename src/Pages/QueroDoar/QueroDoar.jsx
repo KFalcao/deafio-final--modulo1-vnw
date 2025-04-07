@@ -1,6 +1,5 @@
 import S from './queroDoar.module.scss'
 import livroIcon from '../../assets/book-icon.png'
-
 import axios from 'axios'
 import { useState } from 'react'
 
@@ -53,18 +52,18 @@ export default function QueroDoar(){
     return(
         <section className={S.principal}>
             <section className={S.informacoes}>
-            <h2>Por favor, preencha o formulário com suas informações e as informações do Livro.</h2>
-            <form onSubmit={(e) => e.defaultPrevented()}className={S.boxFormulario}>
-                <div>
-                    <img src={livroIcon} alt="Icone de livro aberto" />
-                    <h3>Informações do Livro</h3>
-                </div>
-                <input type="text" placeholder='Título' onChange={capturaTitulo} value={titulo}/>
-                <input type="text" placeholder='Categoria'/>
-                <input type="text" placeholder='Autor'/>
-                <input type="text" placeholder='Link da Imagem'/>
-                <button onClick={enviarDados}>Doar</button>            
-            </form>
+                <h2>Por favor, preencha o formulário com suas informações e as informações do Livro.</h2>
+                <form onSubmit={(e) => e.defaultPrevented()}className={S.boxFormulario}>
+                    <div>
+                        <img src={livroIcon} alt="Icone de livro aberto" />
+                        <h3>Informações do Livro</h3>
+                    </div>
+                    <input type="text" placeholder='Título' onChange={capturaTitulo} value={titulo}/>
+                    <input type="text" placeholder='Categoria'onChange={capturaCategoria} value={categoria}/>
+                    <input type="text" placeholder='Autor'onChange={capturaAutor} value={autor}/>
+                    <input type="text" placeholder='Link da Imagem'onChange={capturaImagem} value={imagem_url}/>
+                    <button onClick={enviarDados}>Doar</button>            
+                </form>
             </section>
         </section>
     )

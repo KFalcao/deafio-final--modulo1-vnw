@@ -1,15 +1,19 @@
 @use '../../global.scss' as *;
 
+footer{
+    height: 28vh;
+}
+
 .contato{
     background: $emphasis;
     color: $primary-color;
-    height: 8vh;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 3vw;
+    padding: 0 5vw;
     nav{
-        width: 12vw;
+        width: 15vw;
         display: flex;
         justify-content: space-between;
     }
@@ -18,9 +22,29 @@
 .infoSite{
     background-color: #232020;
     color: $primary-color;
-    height: 5vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+@media(max-width: 1000px){
+    .contato{
+        nav{
+            width: 220px;
+        }
+    }
+}
+
+@media(max-width: 479px){
+    .contato{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .infoSite{
+        p{
+            text-align: center;
+        }
+    }
 }
